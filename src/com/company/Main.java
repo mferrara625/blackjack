@@ -116,7 +116,7 @@ public class Main {
                         dealersTurn = true;
                     }
 
-                } else if (input.equals("3") && activePlayer.hand.get(0).value == activePlayer.hand.get(1).value) {
+                } else if (input.equals("3") && activePlayer.hand.get(0).value == activePlayer.hand.get(1).value && !playerSplit) {
                     playerSplit = true;
                     split.hand.add(player.hand.get(1));
                     split.hand.add(deck.fullDeck.get(deck.fullDeck.size() - 1));
