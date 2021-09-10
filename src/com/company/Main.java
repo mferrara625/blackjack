@@ -90,6 +90,7 @@ public class Main {
                     if(splitCount == 0){
                         playerIsActive = false;
                         dealersTurn = true;
+                        continue;
                     } else if(splitCount == 1){
                         if(activePlayer == player)
                             activePlayer = split;
